@@ -1,0 +1,41 @@
+{
+  "name": "dsh-pelican",
+  "version": "0.1.0",
+  "description": "鹈鹕环海骑行：右下角 SVG 动画 + 全局消息状态提示（静态双端插件）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "pelican",
+    "fun",
+    "animation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Little-Star888/dsh-pelican"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": ["slots"],
+      "immediately": true
+    }
+  }
+}
