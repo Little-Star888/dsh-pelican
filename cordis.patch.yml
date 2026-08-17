@@ -1,0 +1,7 @@
+# dsh-pelican bundle patch — mounts the pelican plugin row.
+# Installed through `dsh plugin --profile <name> add dsh-pelican`,
+# the CLI reconciles this package into the profile bundle layer and
+# profile boot merges THIS patch, inserting the plugin row below.
+- insert:
+    - id: pelican-sea-ride
+      name: 'dsh-pelican'
