@@ -1,0 +1,7 @@
+# npm 凭据与配置——永远不要提交
+.npmrc
+node_modules/
+*.tgz
+npm-debug.log*
+*.log
+.DS_Store
