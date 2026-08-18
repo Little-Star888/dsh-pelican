@@ -1,6 +1,6 @@
 {
   "name": "dsh-pelican",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "鹈鹕环海骑行：右下角 SVG 动画 + 全局消息状态提示（静态双端插件）",
   "type": "module",
   "main": "lib/index.js",
@@ -34,7 +34,9 @@
     },
     "client": {
       "platform": "web",
-      "inject": ["slots"],
+      "inject": [
+        "slots"
+      ],
       "immediately": true
     }
   }
